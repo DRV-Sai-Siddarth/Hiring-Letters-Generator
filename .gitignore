@@ -1,28 +1,2 @@
 # Ignore environment files
 .env
-
-# Python cache and build
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.egg-info/
-dist/
-build/
-
-# Virtual environments
-.venv/
-venv/
-env/
-
-# Logs
-*.log
-
-# VSCode
-.vscode/
-
-# Streamlit cache
-.streamlit/
-
-# Output folder
-output/
