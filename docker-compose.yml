@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  llm-service:
+    build:
+      context: ./llm-service
+    container_name: hiring-letter-generator-llm-service
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    restart: always
+
+  streamlit:
+    build:
+      context: ./streamlit
+    container_name: hiring-letter-generator-streamlit
+    ports:
+      - "8501:8501"
+    depends_on:
+      - llm-service
+    restart: always

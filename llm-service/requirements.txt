@@ -1,0 +1,6 @@
+flask
+langchain
+groq
+langchain-core
+langchain-community>=0.0.21
+langchain-groq
